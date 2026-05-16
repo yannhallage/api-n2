@@ -1,4 +1,4 @@
-import { createApp } from "./app";
+import { createApp } from "./create-app";
 import { env } from "./config/env";
 import { disconnectPrisma } from "./database/prisma.service";
 
