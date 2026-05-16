@@ -53,6 +53,19 @@ GET /api/v1/users/me
 Authorization: Bearer <accessToken>
 ```
 
+## Deploiement Vercel
+
+Le projet expose l'application Express via `api/index.ts` pour Vercel. Ajoutez ces
+variables dans les Environment Variables du projet Vercel avant de deployer:
+
+```text
+DATABASE_URL
+JWT_SECRET
+JWT_EXPIRES_IN
+```
+
+`JWT_EXPIRES_IN` est optionnelle et vaut `15m` par defaut.
+
 ## Structure
 
 ```text
